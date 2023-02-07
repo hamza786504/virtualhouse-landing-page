@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.card{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    transition: all linear 0.3s;
+}
+.card:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.card_box .card .buttons{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_box > .card > .buttons > div{
+    border: none;
+    max-width: 140px;
+    width: 100%;
+    margin: 0 0.3rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.card_box > .card > .buttons > div:nth-child(2){
+    max-width: none !important;
+    width: 50% !important;
+}
+.card_box div img{
+    width: 100% !important;
+    aspect-ratio: 1/1;
+}
+#accordion_step_one{
+    display: none;
+}
